@@ -1,58 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://techcrestinc.github.io/main/</loc>
+      <loc>https://techcrest.netlify.app/</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://techcrestinc.github.io/main/Prices.html</loc>
+      <loc>https://techcrest.netlify.app/sitemap</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/itconsultingandadvisory</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/pcbuilds</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/laptoppcrepair</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/contact</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/webdevelopmentanddesign</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/prices</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://techcrestinc.github.io/main/builds.html</loc>
+      <loc>https://techcrest.netlify.app/cloudcomputingsolutions</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
    <url>
-      <loc>https://techcrestinc.github.io/main/repair.html</loc>
+      <loc>https://techcrest.netlify.app/customsoftwaredevelopment</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
    <url>
-      <loc>https://techcrestinc.github.io/main/IT.html</loc>
+      <loc>https://techcrest.netlify.app/mobiledevelopmentservices</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
    <url>
-      <loc>https://techcrestinc.github.io/main/customSoftwareDevelopment.html</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://techcrestinc.github.io/main/cloudComputing.html</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://techcrestinc.github.io/main/web.html</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://techcrestinc.github.io/main/mobileDevelopment.html</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://techcrestinc.github.io/main/testing.html</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://techcrestinc.github.io/main/contact.html</loc>
+      <loc>https://techcrest.netlify.app/privacypolicy</loc>
       <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/termsofservice</loc>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://techcrest.netlify.app/softwaretestingandqualityassurance</loc>
+      <changefreq>monthly</changefreq>
       <priority>0.7</priority>
    </url>
 </urlset>
