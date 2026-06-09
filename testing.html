@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Testing & QA — TechCrest Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-hero-img {
+      position: relative; z-index: 1;
+      width: 100%; max-height: 360px;
+      overflow: hidden;
+      border-radius: var(--r-lg);
+      margin: 0 var(--pad-x);
+      width: calc(100% - 2 * var(--pad-x));
+      border: 1px solid var(--border);
+    }
+    .service-hero-img img {
+      width: 100%; height: 360px;
+      object-fit: cover;
+      display: block;
+      opacity: 0.7;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .what-text h2 { font-size: clamp(24px, 3vw, 36px); margin-bottom: 16px; }
+    .what-text p  { font-size: 16px; color: var(--text-muted); line-height: 1.75; }
+    .what-icon-big {
+      font-size: 80px;
+      text-align: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 48px;
+      backdrop-filter: blur(10px);
+    }
+    .location-note {
+      position: relative; z-index: 1;
+      margin: 0 var(--pad-x);
+      background: var(--teal-bg);
+      border: 1px solid rgba(30,207,192,0.25);
+      border-radius: var(--r-lg);
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .location-note p { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+    .cta-band {
+      position: relative; z-index: 1;
+      margin: 0 var(--pad-x);
+      background: linear-gradient(120deg, rgba(79,142,247,0.1), rgba(30,207,192,0.08));
+      border: 1px solid var(--electric-bdr);
+      border-radius: var(--r-lg);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-band h2 { font-size: clamp(20px, 2.5vw, 28px); color: var(--white); margin-bottom: 8px; }
+    .cta-band p  { font-size: 15px; color: var(--text-muted); }
+    @media (max-width: 700px) {
+      .what-grid { grid-template-columns: 1fr; }
+      .what-icon-big { padding: 32px; font-size: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Tech<span>Crest</span> Inc.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Prices.html">Prices</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Computing</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">Software Testing &amp; QA</a></li>
+        <li><a href="builds.html">PC Builds (Delhi)</a></li>
+        <li><a href="repair.html">PC/Laptop Repair (Delhi)</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html" class="nav-cta">Contact us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+</nav>
+
+<section class="page-hero">
+  <span class="page-eyebrow">Services</span>
+  <h1 class="page-title">Software Testing
+& Quality Assurance</h1>
+  <p class="page-lead">Rigorous evaluation and verification processes ensuring software reliability, functionality, and user satisfaction. We build quality in — not bolt it on at the end.</p>
+</section>
+
+<div class="service-hero-img">
+  <img src="https://techcrestinc.github.io/main/Software%20Testing%20and%20Quality%20assurance.avif" alt="Software testing and quality assurance" loading="lazy">
+</div>
+
+<div class="divider" style="margin-top:0"></div>
+
+
+<section class="section">
+  <div class="what-grid">
+    <div class="what-text fade-up">
+      <span class="section-eyebrow">Overview</span>
+      <h2>Catch issues before your users do</h2>
+      <p>Bugs in production are expensive — in reputation and in engineering time. Our QA practice combines automated test suites, exploratory testing, and performance profiling to give you confidence in every release.</p>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary">Get a quote →</a>
+        <a href="Prices.html" class="btn btn-outline">View pricing →</a>
+      </div>
+    </div>
+    <div class="what-icon-big fade-up">✅</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <span class="section-eyebrow">What's included</span>
+  <h2 class="section-title" style="margin-bottom:36px">Everything you need</h2>
+  <div class="features-grid">
+        <div class="card fade-up">
+          <div class="card-icon">🤖</div>
+          <h3>Automated testing</h3>
+          <p>Unit, integration, and end-to-end test suites using Playwright, Cypress, Jest, or your existing framework.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🔬</div>
+          <h3>Manual & exploratory testing</h3>
+          <p>Experienced testers who think like your users and actively look for edge cases your automated suite won't catch.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">📈</div>
+          <h3>Performance testing</h3>
+          <p>Load tests, stress tests, and profiling to find bottlenecks before they become production incidents.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🔐</div>
+          <h3>Security testing</h3>
+          <p>OWASP Top 10 scanning, penetration testing basics, and dependency vulnerability audits.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">♿</div>
+          <h3>Accessibility testing</h3>
+          <p>Screen reader testing, keyboard navigation audits, and colour contrast checks to meet WCAG standards.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">📋</div>
+          <h3>Test strategy & reporting</h3>
+          <p>Clear test plans, coverage reports, and actionable bug reports that your developers can act on immediately.</p>
+        </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="cta-band fade-up" style="margin-bottom:80px;margin-top:80px">
+  <div>
+    <h2>Ready to get started?</h2>
+    <p>Tell us about your project — we'll respond within one business day.</p>
+  </div>
+  <a href="contact.html" class="btn btn-primary">Contact us →</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">Tech<span style="color:var(--electric)">Crest</span> Inc.</div>
+      <p>Pioneering innovative software solutions for businesses worldwide. Proudly based in New Delhi.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://x.com/Techcrestinc" target="_blank" rel="noopener" aria-label="X">&#120143;</a>
+        <a href="https://www.linkedin.com/company/techcrest-incorporated/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/techcrest_inc" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Solutions</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">QA &amp; Testing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Delhi Only</h4>
+      <ul>
+        <li><a href="builds.html">PC Builds</a></li>
+        <li><a href="repair.html">PC &amp; Laptop Repair</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="Prices.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 TechCrest Inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

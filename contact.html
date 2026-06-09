@@ -1,262 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="canonical" href="https://techcrestinc.github.io/main/">
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body Styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Header Styling */
-        header {
-            background: #35424a;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        /* Main Section Styling */
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Form Section Styling */
-        #contact-form h2 {
-            margin-bottom: 10px;
-        }
-
-        form {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input[type="submit"] {
-            background-color: #009688;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #00796b;
-        }
-
-        input,
-        textarea,
-        button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        button {
-            background: #35424a;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        button:hover {
-            background: #1e282d;
-        }
-
-        /* Contact Info Section Styling */
-        #contact-info h2,
-        #map h2 {
-            margin-bottom: 10px;
-        }
-
-        #contact-info p,
-        #contact-info ul {
-            margin-bottom: 10px;
-        }
-
-        #contact-info ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        #contact-info ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        #contact-info ul li a {
-            text-decoration: none;
-            color: #35424a;
-            transition: color 0.3s ease;
-        }
-
-        #contact-info ul li a:hover {
-            color: #1e282d;
-        }
-
-        /* Map Section Styling */
-        #map iframe {
-            width: 100%;
-            border: 0;
-        }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            background: #35424a;
-            color: #fff;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-
-    <main>
-        <section id="contact-form">
-            <h2>Get in Touch</h2>
-            <form method="POST" id="form">
-
-                <input type="hidden" name="access_key" value="e249c072-9542-47fa-9be2-d73c17754e9a">
-                <label for="name">Your Name:</label>
-                <input type="text" name="name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" name="email" required>
-                <label for="message">Your Message:</label>
-                <textarea name="message" required></textarea>
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                <button type="submit">Submit Form</button>
-
-                <div id="result"></div>
-
-            </form>
-        </section>
-
-        <section id="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:alimohammad0482@gmail.com">techcrestinc@gmail.com</a></p>
-            <p>Phone: <a href="tel:+918851287394">+91 8851 287394</a></p>
-            <p>C-28, Batla House Chowk, Jamia Nagar, New Delhi 110025</p>
-            <h3>Follow Us</h3>
-            <ul>
-                <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" class="fa fa-facebook"></a>
-                <a href="https://x.com/Techcrestinc?t=Rcc1NKlk2fiykP9kcZz7hA&s=09" class="fa fa-twitter"></a>
-                <a href="https://www.linkedin.com/company/techcrest-incorporated/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/techcrest_inc?igsh=MTRpbWNiN2FydzF5Mw==" class="fa fa-instagram"></a>
-            </ul>
-        </section>
-
-        <section id="map">
-            <h2>Our Location</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.1283513204485!2d77.28222617578226!3d28.5659082757012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce38a3cc66481%3A0x2c06abfdfe6c78d3!2sBatla%20House%20Chowk%2C%20Batla%20House%2C%20Jamia%20Nagar%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1718177240621!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-
-    <footer>
-        <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" class="fa fa-facebook"></a>
-        <a href="https://x.com/Techcrestinc?t=Rcc1NKlk2fiykP9kcZz7hA&s=09" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/company/techcrest-incorporated/" class="fa fa-linkedin"></a>
-        <a href="https://www.instagram.com/techcrest_inc?igsh=MTRpbWNiN2FydzF5Mw==" class="fa fa-instagram"></a>
-        <div class="container">
-            <p>&copy; 2024 TechCrest inc. All rights reserved.</p>
-            <ul>
-                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-                <li><a href="termsOfService.html">Terms of Service</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
-        </div>
-    </footer>
-
-
-</body>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    const form = document.getElementById('form');
-    const result = document.getElementById('result');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const formData = new FormData(form);
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-        result.innerHTML = "Please wait..."
-
-        fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = "Form submitted successfully";
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function () {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
-</script>
-<script>
-    window.embeddedChatbotConfig = {
-        chatbotId: "K0KPAIoicKarnct4DQWqJ",
-        domain: "www.chatbase.co"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — TechCrest Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
     }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" chatbotId="K0KPAIoicKarnct4DQWqJ" domain="www.chatbase.co" defer>
-</script>
 
+    .contact-form {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 36px;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-body);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(10,22,40,0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 11px 16px;
+      font-size: 14px;
+      color: var(--white);
+      font-family: var(--font-body);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--text-muted); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--electric); }
+    .form-group select option { background: var(--navy); }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+
+    .info-item {
+      display: flex; gap: 18px; align-items: flex-start;
+      margin-bottom: 28px;
+    }
+    .info-icon {
+      width: 42px; height: 42px;
+      background: var(--electric-bg);
+      border: 1px solid var(--electric-bdr);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .info-item h4 {
+      font-family: var(--font-body);
+      font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .08em;
+      color: var(--text-muted); margin-bottom: 4px;
+    }
+    .info-item p, .info-item a {
+      font-size: 15px; color: var(--white);
+      text-decoration: none;
+    }
+    .info-item a:hover { color: var(--electric); }
+
+    .map-wrap {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin-top: 40px;
+      height: 300px;
+    }
+    .map-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Tech<span>Crest</span> Inc.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Prices.html">Prices</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Computing</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">Software Testing & QA</a></li>
+        <li><a href="builds.html">PC Builds (Delhi)</a></li>
+        <li><a href="repair.html">PC/Laptop Repair (Delhi)</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html" class="nav-cta active">Contact us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+</nav>
+
+<section class="page-hero">
+  <span class="page-eyebrow">Get in touch</span>
+  <h1 class="page-title">Let's build something great</h1>
+  <p class="page-lead">Tell us about your project and we'll get back to you within one business day.</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="contact-grid">
+
+    <!-- Info -->
+    <div class="fade-up">
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:techcrestinc@gmail.com">techcrestinc@gmail.com</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+918851287394">+91 8851 287394</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Address</h4>
+          <p>C-28, Batla House Chowk<br>Jamia Nagar, New Delhi 110025</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🌐</div>
+        <div>
+          <h4>Follow us</h4>
+          <p>
+            <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" target="_blank" rel="noopener">Facebook</a> ·
+            <a href="https://x.com/Techcrestinc" target="_blank" rel="noopener">X</a> ·
+            <a href="https://www.linkedin.com/company/techcrest-incorporated/" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://www.instagram.com/techcrest_inc" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.1283513204485!2d77.28222617578226!3d28.5659082757012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce38a3cc66481%3A0x2c06abfdfe6c78d3!2sBatla%20House%20Chowk%2C%20Batla%20House%2C%20Jamia%20Nagar%2C%20Okhla%2C%20New%20Delhi%2C%20Delhi%20110025!5e0!3m2!1sen!2sin!4v1718177240621!5m2!1sen!2sin"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="TechCrest Inc. location map">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form fade-up">
+      <h2 style="font-size:22px;margin-bottom:24px;color:var(--white)">Send us a message</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Rahul Sharma" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="rahul@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service you're interested in</label>
+          <select id="service" name="service">
+            <option value="">Select a service…</option>
+            <option>Custom Software Development</option>
+            <option>Mobile App Development</option>
+            <option>Cloud Computing Solutions</option>
+            <option>IT Consulting & Advisory</option>
+            <option>Web Development & Design</option>
+            <option>Software Testing & QA</option>
+            <option>PC Build (Delhi only)</option>
+            <option>PC/Laptop Repair (Delhi only)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" name="message" placeholder="Brief description, timeline, any specific requirements…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;">Send message →</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">Tech<span style="color:var(--electric)">Crest</span> Inc.</div>
+      <p>Pioneering innovative software solutions for businesses worldwide. Proudly based in New Delhi.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://x.com/Techcrestinc" target="_blank" rel="noopener" aria-label="X">𝕏</a>
+        <a href="https://www.linkedin.com/company/techcrest-incorporated/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/techcrest_inc" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Solutions</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">QA & Testing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Delhi Only</h4>
+      <ul>
+        <li><a href="builds.html">PC Builds</a></li>
+        <li><a href="repair.html">PC & Laptop Repair</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="Prices.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 TechCrest Inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>

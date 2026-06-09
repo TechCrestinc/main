@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Builds — TechCrest Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-hero-img {
+      position: relative; z-index: 1;
+      width: 100%; max-height: 360px;
+      overflow: hidden;
+      border-radius: var(--r-lg);
+      margin: 0 var(--pad-x);
+      width: calc(100% - 2 * var(--pad-x));
+      border: 1px solid var(--border);
+    }
+    .service-hero-img img {
+      width: 100%; height: 360px;
+      object-fit: cover;
+      display: block;
+      opacity: 0.7;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .what-text h2 { font-size: clamp(24px, 3vw, 36px); margin-bottom: 16px; }
+    .what-text p  { font-size: 16px; color: var(--text-muted); line-height: 1.75; }
+    .what-icon-big {
+      font-size: 80px;
+      text-align: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 48px;
+      backdrop-filter: blur(10px);
+    }
+    .location-note {
+      position: relative; z-index: 1;
+      margin: 0 var(--pad-x);
+      background: var(--teal-bg);
+      border: 1px solid rgba(30,207,192,0.25);
+      border-radius: var(--r-lg);
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .location-note p { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+    .cta-band {
+      position: relative; z-index: 1;
+      margin: 0 var(--pad-x);
+      background: linear-gradient(120deg, rgba(79,142,247,0.1), rgba(30,207,192,0.08));
+      border: 1px solid var(--electric-bdr);
+      border-radius: var(--r-lg);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-band h2 { font-size: clamp(20px, 2.5vw, 28px); color: var(--white); margin-bottom: 8px; }
+    .cta-band p  { font-size: 15px; color: var(--text-muted); }
+    @media (max-width: 700px) {
+      .what-grid { grid-template-columns: 1fr; }
+      .what-icon-big { padding: 32px; font-size: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Tech<span>Crest</span> Inc.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Prices.html">Prices</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Computing</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">Software Testing &amp; QA</a></li>
+        <li><a href="builds.html">PC Builds (Delhi)</a></li>
+        <li><a href="repair.html">PC/Laptop Repair (Delhi)</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html" class="nav-cta">Contact us</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+</nav>
+
+<section class="page-hero">
+  <span class="page-eyebrow">Services — Delhi Only</span>
+  <h1 class="page-title">Custom PC Builds</h1>
+  <p class="page-lead">Customized desktop assembly tailored to your exact requirements. Available exclusively in New Delhi.</p>
+</section>
+
+<div class="service-hero-img">
+  <img src="https://techcrestinc.github.io/main/PCBuild.jpg" alt="Custom PC build components" loading="lazy">
+</div>
+
+<div class="divider" style="margin-top:0"></div>
+
+<div class="location-note fade-up">
+  <span style="font-size:22px">📍</span>
+  <div>
+    <strong style="color:var(--white)">Available in New Delhi only</strong>
+    <p>This service requires a physical visit to our New Delhi location or delivery within Delhi NCR. Contact us to arrange.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="what-grid">
+    <div class="what-text fade-up">
+      <span class="section-eyebrow">Overview</span>
+      <h2>Your perfect machine, built right</h2>
+      <p>Whether you need a workstation for video editing, a powerful machine for data processing, or a gaming rig — we spec, source, and assemble it for you. Every build is tested before handoff and comes with setup support.</p>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary">Get a quote →</a>
+        <a href="Prices.html" class="btn btn-outline">View pricing →</a>
+      </div>
+    </div>
+    <div class="what-icon-big fade-up">💻</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <span class="section-eyebrow">What's included</span>
+  <h2 class="section-title" style="margin-bottom:36px">Everything you need</h2>
+  <div class="features-grid">
+        <div class="card fade-up">
+          <div class="card-icon">🎯</div>
+          <h3>Needs assessment</h3>
+          <p>We start by understanding your workload — the right specs for photo editing are very different from gaming or 3D rendering.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">💰</div>
+          <h3>Budget-optimized sourcing</h3>
+          <p>We know where to get the best components for your budget. No upselling to parts you don't need.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🔧</div>
+          <h3>Professional assembly</h3>
+          <p>Clean cable management, proper thermal paste application, and a build that's easy to service later.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🧪</div>
+          <h3>Burn-in testing</h3>
+          <p>Every machine runs a full suite of stability tests before it leaves our hands — no DOAs.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">💿</div>
+          <h3>OS & software setup</h3>
+          <p>Windows or Linux, drivers, essential software — ready to use the moment you plug it in.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">🛡️</div>
+          <h3>Post-build support</h3>
+          <p>Any issues in the first 30 days, we'll fix them. And we're available for upgrades as your needs grow.</p>
+        </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="cta-band fade-up" style="margin-bottom:80px;margin-top:80px">
+  <div>
+    <h2>Ready to get started?</h2>
+    <p>Tell us about your project — we'll respond within one business day.</p>
+  </div>
+  <a href="contact.html" class="btn btn-primary">Contact us →</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">Tech<span style="color:var(--electric)">Crest</span> Inc.</div>
+      <p>Pioneering innovative software solutions for businesses worldwide. Proudly based in New Delhi.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/qWNvRtSFuEED3phv/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://x.com/Techcrestinc" target="_blank" rel="noopener" aria-label="X">&#120143;</a>
+        <a href="https://www.linkedin.com/company/techcrest-incorporated/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/techcrest_inc" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="customSoftwareDevelopment.html">Custom Software</a></li>
+        <li><a href="mobileDevelopment.html">Mobile Apps</a></li>
+        <li><a href="cloudComputing.html">Cloud Solutions</a></li>
+        <li><a href="IT.html">IT Consulting</a></li>
+        <li><a href="web.html">Web Development</a></li>
+        <li><a href="testing.html">QA &amp; Testing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Delhi Only</h4>
+      <ul>
+        <li><a href="builds.html">PC Builds</a></li>
+        <li><a href="repair.html">PC &amp; Laptop Repair</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="Prices.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 TechCrest Inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
